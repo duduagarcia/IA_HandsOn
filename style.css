@@ -37,15 +37,125 @@ p {
 main {
   width: 100vw;
   max-width: 100%;
-  /* min-height: 90vh; */
-  background-color: #c6c6c6;
-  background-size: contain;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url(./assets/abertura_verde.png) center center no-repeat;
+  background-size: cover;
+  
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  padding-bottom: 50px;
 }
 
-main img {
-  width: 100%;
-  object-fit: cover;
+main .container{
+  /* background-color: red; */
+  height: 100%;
+
+  display: flex;
 }
+
+main .container .col111 {
+  color: var(--white);
+  padding-top: 80px;
+  padding-right: 80px;
+}
+
+main .container .col111 h1{
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+main .container .col111 h3{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+main .container .col111 h2{
+  margin-bottom: 80px;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+
+main .container .col111 p{
+  font-size: 1.2rem;
+  line-height: 200%;
+}
+
+main .container .col111 .logo_wrapper{
+  width: 220px;
+  margin-top: 100px;
+}
+
+main .container .col111 .logo_wrapper img{
+  width: 100%;
+  
+}
+
+main .container .col222 {
+  padding-left: 20px;
+  padding-top: 150px;
+}
+
+main .container .col222 h2{
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+main .container .col222 h2 span{
+  font-weight: 600;
+}
+
+
+main .container .col222 .wrapper .group{
+  /* background-color: #0297b5; */
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 10px;
+}
+
+main .container .col222 .wrapper .group label{
+  color: var(--white);
+  font-weight: 500;
+}
+
+main .container .col222 .wrapper .group input{
+  padding: 12px 20px 12px 8px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+
+/* main .container .col222 .wrapper .group input:focus{
+  border: 1px solid var(--primary-orange);
+} */
+
+main .container .col222 .wrapper .group #submit{
+  background-color: var(--primary-orange);
+  color: var(--white);
+  border: none;
+  outline: none;
+  padding: 16px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+
+
+
+
+/* --------------------------------- */
+
+
 
 #imersao {
   background-color: var(--primary-blue);
@@ -135,6 +245,11 @@ main img {
 
 /* --------------------------------- */
 
+
+
+
+
+
 #oq_voce_vai_aprender {
   width: 100vw;
   max-width: 100%;
@@ -214,6 +329,11 @@ main img {
 
 /* --------------------------------- */
 
+
+
+
+
+
 #para_quem_e_curso {
   background-color: var(--dark-orange);
   display: flex;
@@ -246,6 +366,10 @@ main img {
 }
 
 /* --------------------------------- */
+
+
+
+
 
 #quem_somos .row1 {
   background-color: whitesmoke;
@@ -385,6 +509,11 @@ main img {
 
 /* --------------------------------- */
 
+
+
+
+
+
 #proxima_turma {
   padding: 80px 20px;
   width: 100%;
@@ -471,6 +600,11 @@ main img {
 
 /* --------------------------------- */
 
+
+
+
+
+
 #ebook {
   background-color: var(--dark-blue);
   padding: 80px 20px;
@@ -521,6 +655,11 @@ main img {
 
 /* --------------------------------- */
 
+
+
+
+
+
 @media screen and (max-width: 1100px) {
   #proxima_turma .container {
     gap: 50px;
@@ -565,6 +704,29 @@ main img {
 }
 
 @media screen and (max-width: 800px){
+    main .container {
+      flex-wrap: wrap;
+      gap: 100px;
+    }
+
+    main .container .col111 .logo_wrapper{
+      margin: 0 auto;
+  margin-top: 100px;
+
+    }
+
+    main .container .col222 {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+    }
+
+    main .container .col222 h2{
+      text-align: center;
+    }
+
     #quem_somos .row2 .container .col11 .header {
     display: flex;
     align-items: center;
